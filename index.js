@@ -1,15 +1,13 @@
-
 function formValidation(inputText){
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if(inputText.value.match(mailformat))
-  {
+  if(inputText.value.match(mailformat)){
     alert("Valid");
-    document.registration.email.focus();
+    document.registration.email_1.focus();
     return true;
   }
   else{
     alert("wrong format");
-    document.registration.email.focus();
+    document.registration.email_1.focus();
     return false;
   }
 }
