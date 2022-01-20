@@ -1,0 +1,106 @@
+*{
+  margin: 0 ;
+  border: 0;
+}
+.sec_1{
+  height: 100vh;
+  width:100vh;
+}
+h1{
+  color: rgba(224, 220, 246, 0.7);
+  backdrop-filter: blur( 4px );
+  font-size: 200px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+}
+.fas{
+  color: #fff;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+h2{
+  font-size: 25px;
+}
+#sec_2{
+height: 70vh;
+width: 100%;
+background-color: black;
+}
+.wel_box{
+  height: auto;
+  width: 1170px;
+  border: 1px solid red;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+#welcome_text{
+  padding: 10px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  color: #ffd;
+  font-size: 20px;
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
+  justify-content: center;
+}
+.homepagedetails{
+  width: 450px;
+  height: 200px;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+}
+#name, #email{
+  font-size: 30px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  color: #ffd;
+}
+#name_1{
+  height: 30px;
+  width: 220px;
+  margin-left: 20px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  font-size: 13px;
+}
+#email_1{
+  margin-left: 26px;
+  height: 30px;
+  width: 220px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  font-size: 13px;
+}
+button{
+  height: 50px;
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 75px;
+  border-radius: 5px;
+  background-color: #a9ff5e;
+  font-size: 30px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+
+}
