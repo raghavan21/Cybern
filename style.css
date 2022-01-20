@@ -57,7 +57,7 @@ background-color: black;
 }
 .homepagedetails{
   width: 450px;
-  height: 200px;
+  height: 280px;
   position: relative;
   top: 45%;
   left: 50%;
@@ -92,10 +92,13 @@ background-color: black;
   src: url("nasalization-rg.otf") format("opentype");
   font-size: 13px;
 }
+#captcha{
+  margin-top: 30px;
+}
 button{
   height: 50px;
   width: 300px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 75px;
   border-radius: 5px;
   background-color: #a9ff5e;
