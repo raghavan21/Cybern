@@ -32,6 +32,33 @@ html {
 h2{
   font-size: 25px;
 }
+h3{
+  margin-top: 49px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgba(224, 220, 246, 0.7);
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+}
+#toggle_button{
+  width:100px;
+  height:40px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.toggle{
+  position: absolute;
+  left: 65%;
+  transform: translate(70%, -10%);
+  width: auto;
+  display: flex;
+}
+#toggle_button:active{
+  transform: none;
+}
+span{
+  display: inline;
+}
 #sec_2{
 height: 70vh;
 width: 100%;
@@ -57,7 +84,7 @@ background-color: black;
 }
 .homepagedetails{
   width: 450px;
-  height: 280px;
+  height: 200px;
   position: relative;
   top: 45%;
   left: 50%;
@@ -92,17 +119,112 @@ background-color: black;
   src: url("nasalization-rg.otf") format("opentype");
   font-size: 13px;
 }
-#captcha{
-  margin-top: 30px;
-}
+input[type="text"]#website { display: none; }
 button{
   height: 50px;
   width: 300px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 75px;
   border-radius: 5px;
   background-color: #a9ff5e;
   font-size: 30px;
   font-family: Nasalization;
   src: url("nasalization-rg.otf") format("opentype");
+}
+button:hover{
+  cursor: pointer;
+}
+button:active{
+ transform: translateY(4px)
+}
+#l1_head{
+  text-align: center;
+  font-size: 30px;
+}
+#l1_p{
+  color: #ffd;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  font-size: 20px;
+}
+.question{
+  height:25% ;
+  width: 50%;
+  margin-top: 150px;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 25px;
+}
+.submit_con{
+  display: inline-flex;
+  margin-top: 1.3vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#l1_ip{
+  height: 30px;
+  width: 220px;
+  margin-left: 25%;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  font-size: 20px;
+}
+#submit_q1{
+  height: 30px;
+  width: 220px;
+  margin-top: 30px;
+  margin-left: 75px;
+  border-radius: 5px;
+  background-color: #a9ff5e;
+  font-size: 20px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+}
+#hint{
+  height: auto;
+  width: 75px;
+  border: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  visibility: hidden;
+}
+#symbol{
+  font-size: 25px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  text-align: center;
+  margin-top: 5px;
+  cursor: default;
+  color: #fff;
+}
+#h_wrap{
+  visibility: hidden;
+}
+#h_text{
+  font-size: 24px;
+  font-family: Nasalization;
+  src: url("nasalization-rg.otf") format("opentype");
+  cursor: default;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+  height: 30px;
+  border-radius: 10px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  padding: 10px;
 }

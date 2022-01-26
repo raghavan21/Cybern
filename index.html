@@ -9,6 +9,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
 		<script src="https://kit.fontawesome.com/84674cf0fd.js" crossorigin="anonymous"></script>
+		<script src="index.js">
+
+		</script>
 		<style>
 			body {
 				width: 100%;
@@ -20,11 +23,22 @@
 		</style>
 		<title>Treasure Hunt</title>
 		<link rel="preload" href="./scene.json" as="fetch">
+		<script>
+		$('form').submit(function(){
+		        if ($('input#website').val().length != 0) {
+		            return false;
+		        }
+		});
+		</script>
 	</head>
-
-	<body onload='document.registration.email.focus()'>
+<!-- body -->
+	<body>
 		<div class="sectionwrap">
 		<section class="sec_1">
+			<div class="toggle">
+			<h3>Animation</h3>
+			<button onclick="myFunction()" id="toggle_button">On/Off</button>
+		</div>
 			<h1>CYBERN</h1>
 			<canvas id="canvas3d"></canvas>
 		<a href="#sec_2"><i class="fas fa-chevron-down fa-2x"></i></a>
@@ -43,12 +57,12 @@
 		<div class="homepagedetails">
 			<form id="sheetdb-form" action="https://sheetdb.io/api/v1/5lzq0ya30bzu0" method="POST">
 				<label for="name" id="name">Your Name</label>
-				<input type="text" name="data[name]" id="name_1"><br><br>
+				<input type="text" name="data[name]" id="name_1" required/><br><br>
 				<label for="email" id="email">Your Email</label>&nbsp
-				<input name="data[email]" id="email_1" type="email"><br>
+				<input name="data[email]" id="email_1" type="email" required/><br>
+				<input id="website" name="website" type="text" value="" />
 				<button type="submit" id="submit" name="submit">Submit &crarr;</button>
 			</form>
-
 			<script>
   var form = document.getElementById('sheetdb-form');
   form.addEventListener("submit", e => {
@@ -60,7 +74,7 @@
         response => response.json()
     ).then((html) => {
       // you can put any JS code here
-      window.location.href = 'https://www.svce.ac.in/';
+      window.location.href = 'hh.html';
     });
   });
 </script>
@@ -69,11 +83,11 @@
 </div>
 
 
-	<!-- <script type="module">
+<script type="module">
 		import { Application } from './runtime.js';
 		const app = new Application();
 		app.load('./scene.json');
-	</script> -->
+	</script> 
 
 	</body>
 </html>

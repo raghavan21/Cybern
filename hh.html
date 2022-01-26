@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/84674cf0fd.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <style>
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position:absolute;
+    background: rgba(25,25,25, 1);
+  }
+  </style>
+  <title>HUNT_NO_1</title>
+</head>
+<body oncontextmenu="return false;">
+  <h3 id="l1_head">{LEVEL} - 1</h4>
+    <div class="question">
+      <p id="l1_p">Many hackers use this OS for hacking and testing purposes. Determine the operating system. <br> <br> (Type in lowercase)</p>
+      <form name="answerq1" id="q1_form" action="javascript:void(0);">
+        <div class="submit_con">
+          <input type="text" name="answer" id="l1_ip" required/>
+          <button type="submit" id="submit_q1" name="submit" onclick="formValidation(document.answerq1.l1_ip)"/>Submit</button>
+        </div>
+      </form>
+    </div>
+    <div id="hint">
+      <p id="symbol">HINT</p>
+    </div>
+    <div id="h_wrap">
+      <p id="h_text">DRAGON🐉</p>
+      <p id="click"></p>
+    </div>
+    <script>
+    function showDiv1() {
+      document.getElementById("hint").style.visibility = "visible";
+    }
+    setTimeout("showDiv1()", 60000);
+    function showDiv2() {
+      document.getElementById("h_wrap").style.visibility = "visible";
+    }
+    setTimeout("showDiv2()", 60000);
+    </script>
+  </body>
+  </html>
