@@ -37,7 +37,7 @@ function formValidation(inputText){
   if(inputText.value.match(ans))
   {
     alert("Correct");
-    window.location.href = 'https://www.svce.ac.in';
+    window.location.href = 'https://r.mtdv.me/videos/lFVW4XCGGt';
   }
   else{
     alert("Incorrect");
